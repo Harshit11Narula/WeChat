@@ -2,7 +2,7 @@ document.onclick = animateCircles;
 function animateCircles(event) {
   var emoji = document.createElement("img");
   emoji.setAttribute("class", "emoji");
-  emoji.setAttribute("src", "./images/emoji1.jpg");
+  emoji.setAttribute("src", "../images/emoji1.jpg");
   document.body.appendChild(emoji);
   emoji.style.left = event.clientX + "px";
   emoji.style.top = event.clientY + "px";
