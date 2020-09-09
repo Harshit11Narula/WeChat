@@ -55,8 +55,6 @@ socket.on("newUserJoinMessage", (obj) => {
   paraElement.appendChild(pTextNode);
   paraElement.style.textAlign = "center";
   paraElement.style.fontSize = "24px";
-
-  paraElement.style.padding = "5px";
   paraElement.style.margin = "15px";
   paraElement.style.boxShadow = "-1px 1px 10px 6px black";
   chatMessageDiv.appendChild(paraElement);
@@ -65,11 +63,14 @@ function formatMessage(obj) {
   var str = obj.username + ": " + obj.message;
   var outerDiv = document.createElement("div");
   outerDiv.style.textAlign = "left";
-  outerDiv.style.margin = "15px";
+
+  outerDiv.style.margin = "25px";
   var paraElement = document.createElement("div");
   var pTextNode = document.createTextNode(str);
   paraElement.appendChild(pTextNode);
   paraElement.style.fontSize = "24px";
+  paraElement.style.margin = "15px";
+
   paraElement.style.padding = "10px";
   paraElement.style.boxShadow = "-1px 1px 10px 6px black";
   paraElement.style.display = "inline";
@@ -80,14 +81,15 @@ function sendMessageEventHandler() {
   var str = username + ": " + chatMessage.value;
   var outerDiv = document.createElement("div");
   outerDiv.style.textAlign = "right";
-  outerDiv.style.margin = "15px";
+
+  outerDiv.style.margin = "25px";
   var paraElement = document.createElement("div");
   var pTextNode = document.createTextNode(str);
   paraElement.appendChild(pTextNode);
   paraElement.style.fontSize = "24px";
   paraElement.style.padding = "10px";
+  paraElement.style.margin = "15px";
   paraElement.style.boxShadow = "-1px 1px 10px 6px black";
-  paraElement.style.margin = "10px";
   paraElement.style.display = "inline";
   outerDiv.appendChild(paraElement);
   chatMessageDiv.appendChild(outerDiv);
