@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chat Room</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/room.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="font-weight-bold text-center" style="font-size: 70px">
+          Select a Chat Room
+        </h1>
+      </div>
+      <div
+        style="margin-top: 100px; background: transparent"
+        class="justify-content-around"
+      >
+        <div class="row">
+          <div class="col-sm-3" style="background: transparent">
+            <div class="card-wrapper">
+              <div class="content">
+                <div
+                  class="face-front"
+                  style="background: url('./images/react.png') center no-repeat"
+                ></div>
+                <div class="face-back" style="background-color: #a9a9a9">
+                  <h1 class="text-center m-3">React</h1>
+                  <p
+                    class="font-weight-bold"
+                    style="font-size: larger; margin: 20px"
+                  >
+                    React is an open-source JavaScript library for building user
+                    interfaces or UI components. It is maintained by Facebook
+                    and a community of individual developers and companies.
+                    React can be used as a base in the development of
+                    single-page or mobile
+                  </p>
+                  <form method="POST" action="http://localhost:3000/data">
+                    <input
+                      id="reactRoom"
+                      name="username"
+                      type="hidden"
+                      value=""
+                    />
+                    <input name="roomName" type="hidden" value="React" />
+                    <input
+                      class="btn btn-primary m-3"
+                      type="submit"
+                      value="Move to React Chat Room"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3" style="background: transparent">
+            <div class="card-wrapper">
+              <div class="content">
+                <div
+                  class="face-front"
+                  style="
+                    background: url('./images/angular.png') no-repeat center;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="face-back" style="background-color: #0000ff">
+                  <h1 class="text-center m-3">Angular</h1>
+                  <p
+                    class="font-weight-bold"
+                    style="font-size: larger; margin: 20px"
+                  >
+                    Angular is a TypeScript-based open-source web application
+                    framework led by the Angular Team at Google and by a
+                    community of individuals and corporations. Angular is a
+                    complete rewrite from the same team that built AngularJS.
+                  </p>
+                  <form method="POST" action="http://localhost:3000/data">
+                    <input
+                      id="angularRoom"
+                      name="username"
+                      type="hidden"
+                      value=""
+                    />
+                    <input name="roomName" type="hidden" value="Angular" />
+                    <input
+                      class="btn btn-primary m-3"
+                      type="submit"
+                      value="Move to Angular Chat Room"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3" style="background: transparent">
+            <div class="card-wrapper">
+              <div class="content">
+                <div
+                  class="face-front"
+                  style="
+                    background: url('./images/vue.png') center no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="face-back" style="background-color: #006400">
+                  <h1 class="text-center m-3">Vue</h1>
+                  <p
+                    class="font-weight-bold"
+                    style="font-size: larger; margin: 20px"
+                  >
+                    Vue.js is an open-source model–view–viewmodel JavaScript
+                    framework for building user interfaces and single-page
+                    applications. It was created by Evan You, and is maintained
+                    by him and the rest of the active core team members coming
+                    from various companies such as Netlify and Netguru.
+                  </p>
+                  <form method="POST" action="http://localhost:3000/data">
+                    <input
+                      id="vueRoom"
+                      name="username"
+                      type="hidden"
+                      value=""
+                    />
+                    <input name="roomName" type="hidden" value="Vue" />
+                    <input
+                      class="btn btn-primary m-3"
+                      type="submit"
+                      value="Move to Vue Chat Room"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3" style="background: transparent">
+            <div class="card-wrapper">
+              <div class="content">
+                <div
+                  class="face-front"
+                  style="
+                    background: url('./images/html5.jpg') center no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <div class="face-back" style="background-color: #301934">
+                  <h1 class="text-center m-3">HTML5</h1>
+                  <p
+                    class="font-weight-bold"
+                    style="font-size: larger; margin: 20px"
+                  >
+                    HTML5 is a markup language used for structuring and
+                    presenting content on the World Wide Web. It is the fifth
+                    and latest major version of HTML that is a World Wide Web
+                    Consortium recommendation.
+                  </p>
+                  <form method="POST" action="http://localhost:3000/data">
+                    <input
+                      id="html5Room"
+                      name="username"
+                      type="hidden"
+                      value=""
+                    />
+                    <input name="roomName" type="hidden" value="HTML5" />
+                    <input
+                      class="btn btn-primary m-3"
+                      type="submit"
+                      value="Move to HTML5 Chat Room"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+      integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/room.js"></script>
+  </body>
+</html>

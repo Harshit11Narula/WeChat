@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/chatStyle.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 10px">
+        <div
+          class="font-weight-bold text-center display-1"
+          id="roomTitle"
+          style="margin-left: 500px; font-size: 60px"
+        ></div>
+      </div>
+      <div class="row" style="margin-top: 50px">
+        <div class="col-2">
+          <h1 class="font-weight-bold text-center m-4" style="font-size: 30px">
+            Participants
+          </h1>
+          <ul id="allUsers" class="text-dark m-5" style="font-size: 20px"></ul>
+        </div>
+        <div class="col-9 offset-1">
+          <h1 class="font-weight-bold text-center m-4" style="font-size: 30px">
+            Chats
+          </h1>
+          <div id="chatMessageDiv" class="m-2 p-4 overflow-auto"></div>
+          <form id="chatForm" class="justify-content-center">
+            <input
+              type="text"
+              name="txtChatMessage"
+              id="txtChatMessage"
+              class="m-2"
+              class="form-check"
+              style="width: 865px; background: transparent !important"
+            />
+            <input
+              type="button"
+              value="Send Message"
+              style="width: 220px; background: transparent !important"
+              class="bg-light"
+              onclick="sendMessageEventHandler();"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+      integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

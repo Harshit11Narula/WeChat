@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: url("../images/back.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Times New Roman", Times, serif;
+  height: 750px;
+}
+h1 {
+  font-size: 50px;
+  color: black;
+}
+img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  margin-left: 200px;
+  transition: 1s;
+  opacity: 0.4;
+}
+
+img:hover {
+  -webkit-transform: scale(1.8);
+}
+
+.col-md-6 {
+  box-shadow: -1px 1px 50px 10px black;
+  border-radius: 0px 100px;
+  margin-top: 150px;
+  height: 450px;
+  margin-left: 450px;
+  background: rgb(0, 0, 0, 0, 4);
+}
+.container {
+  position: absolute;
+}
+.emoji {
+  width: 40px;
+  margin: 0px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+}

@@ -1,0 +1,10 @@
+#chatMessageDiv {
+  background: rgba(76, 175, 80, 0.3);
+  color: black;
+  height: 480px;
+
+}
+body{
+  background: url("../images/chatback.jpg") no-repeat center;
+  background-size: cover;
+}
